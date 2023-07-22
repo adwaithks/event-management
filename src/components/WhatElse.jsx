@@ -8,6 +8,25 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 
+const events = {
+	destinationthemeweddings:
+		"https://images.unsplash.com/photo-1567888818950-737cde12f04c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGVzdGluYXRpb24lMjB3ZWRkaW5nfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60",
+	openairfunctions:
+		"https://images.unsplash.com/photo-1547963802-25f153e14080?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3BlbiUyMGFpciUyMGZ1bmN0aW9uc3xlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60",
+	waterthemeceremonies:
+		"https://images.unsplash.com/photo-1645306715377-b82ddef01404?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhdGUlMjBjZXJlbW9uaWVzfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60",
+	exquisitephotography:
+		"https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+	"music&dancebands":
+		"https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+	honeymoonpackages:
+		"https://images.unsplash.com/photo-1535913989690-f90e1c2d4cfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9uZXltb29ufGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60",
+	makeoverservices:
+		"https://images.unsplash.com/photo-1662151820001-0c8d949304a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFrZW92ZXIlMjBzZXJ2aWNlc3xlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60",
+	luxuryvehicles:
+		"https://images.unsplash.com/photo-1522255272218-7ac5249be344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwdmVyaGljbGVzfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60",
+};
+
 const Service1 = ({ title }) => {
 	const [isOver, setIsOver] = useState(false);
 	return (
@@ -21,16 +40,16 @@ const Service1 = ({ title }) => {
 				display: "flex",
 				position: "relative",
 				justifyContent: "flex-start",
-				_hover: {
-					filter: "brightness(0.9)",
-				},
 				// _hover: {
-				// 	bgColor: "#260042",
-				// 	color: "white",
-				// 	cursor: "pointer",
-				// 	boxShadow: "5px 5px 0px #260042",
-				// 	border: "#260042 solid 2px",
+				// 	filter: "brightness(0.9)",
 				// },
+				// // _hover: {
+				// // 	bgColor: "#260042",
+				// // 	color: "white",
+				// // 	cursor: "pointer",
+				// // 	boxShadow: "5px 5px 0px #260042",
+				// // 	border: "#260042 solid 2px",
+				// // },
 			}}
 			onClick={() => {
 				if (window.innerWidth < 600)
@@ -46,7 +65,7 @@ const Service1 = ({ title }) => {
 					zIndex: 1,
 					filter: "brightness(0.3)",
 				}}
-				src="https://images.unsplash.com/photo-1605106250963-ffda6d2a4b32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+				src={events[title.replaceAll(" ", "").toLowerCase()]}
 				height="100%"
 				width="100%"
 			/>

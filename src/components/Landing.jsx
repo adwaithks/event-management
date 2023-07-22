@@ -31,8 +31,8 @@ const Landing = () => {
 				<Image
 					sx={{ position: "absolute", zIndex: 1 }}
 					objectFit="cover"
-					filter="brightness(0.4)"
-					src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80"
+					filter="brightness(0.5)"
+					src="https://images.unsplash.com/photo-1638272181967-7d3772a91265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
 					height="100%"
 					width="100%"
 				/>
@@ -48,8 +48,8 @@ const Landing = () => {
 				<Heading
 					sx={{
 						letterSpacing: 6,
-						textDecoration: "underline",
-						textDecorationColor: "gold",
+						// textDecoration: "underline",
+						// textDecorationColor: "gold",
 					}}
 					fontSize={isTabletOrBelow ? "4xl" : "6xl"}
 					fontFamily="DM Serif Display"
