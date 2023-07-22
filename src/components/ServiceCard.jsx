@@ -15,6 +15,11 @@ const ServiceCard = (props) => {
 				backdropFilter: "blur( 4px )",
 				WebkitBackdropFilter: "blur( 4px )",
 			}}
+			onClick={() => {
+				if (window.innerWidth < 600)
+					window.open("tel:+919895228089", "_blank");
+				else window.open("mailto:ronnygeorgev@gmail.com");
+			}}
 			height={320}
 			width={300}
 		>
