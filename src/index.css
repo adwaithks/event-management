@@ -1,0 +1,9 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Karla", sans-serif;
+}
+
+body {
+	background-color: rgba(38, 0, 66, 0.15);
+}
