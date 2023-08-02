@@ -8,6 +8,7 @@ import {
 	ModalContent,
 	ModalOverlay,
 	Text,
+	useBreakpointValue,
 	useDisclosure,
 } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
@@ -115,9 +116,14 @@ const events = {
 };
 
 const ServiceCard = (props) => {
+	const isMobile = useBreakpointValue({
+		base: true,
+		md: false,
+		lg: false,
+	});
+
 	const { title, description, imageUrl } = props;
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	console.log(events[title.replaceAll(" ", "").toLowerCase()]);
 	return (
 		<Box
 			sx={{
@@ -133,7 +139,7 @@ const ServiceCard = (props) => {
 				onOpen();
 			}}
 			height={320}
-			width={300}
+			width={isMobile ? "100%" : 300}
 		>
 			<Modal
 				isOpen={isOpen}

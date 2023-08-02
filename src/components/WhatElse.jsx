@@ -28,6 +28,12 @@ const events = {
 };
 
 const Service1 = ({ title }) => {
+	const isMobile = useBreakpointValue({
+		base: true,
+		md: false,
+		lg: false,
+	});
+
 	const [isOver, setIsOver] = useState(false);
 	return (
 		<Box
@@ -35,7 +41,7 @@ const Service1 = ({ title }) => {
 				p: 2,
 				fontWeight: "bold",
 				transition: "background-color ease-in 0.1s",
-				width: 300,
+				width: isMobile ? "100%" : 300,
 				height: 300,
 				display: "flex",
 				position: "relative",
