@@ -1,6 +1,7 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import {
 	Box,
+	Container,
 	Heading,
 	Image,
 	Text,
@@ -163,10 +164,14 @@ const WhatElse = () => {
 				>
 					What Else Do We Offer ?
 				</Heading>
-				<Text color="black" textAlign="center">
-					We are not done yet! We offer even more, other than our core
-					services
-				</Text>
+				<Container>
+					<Text color="black" textAlign="center">
+						Good news is that we have now put our foot forward in
+						catering to our customers ideas by providing
+						distinguished themes and experiences. Here are some of
+						our specialities
+					</Text>
+				</Container>
 			</Box>
 			<Box
 				sx={{
