@@ -32,7 +32,7 @@ const Landing = () => {
 					sx={{ position: "absolute", zIndex: 1 }}
 					objectFit="cover"
 					filter="brightness(0.5)"
-					src="https://images.unsplash.com/photo-1638272181967-7d3772a91265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+					src="https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
 					height="100%"
 					width="100%"
 				/>
@@ -53,13 +53,13 @@ const Landing = () => {
 					}}
 					fontSize={isTabletOrBelow ? "4xl" : "6xl"}
 					fontFamily="Poppins"
-					fontWeight="800"
+					fontWeight="black"
 					color="white"
 					mb={2}
 				>
 					Find any perfect venue for wherever life takes you!
 				</Heading>
-				<Text fontSize="xl" color="lightgray">
+				<Text fontSize="md" color="lightgray">
 					The only event management platform you need. Find any
 					perfect venue for wherever life takes you!
 				</Text>
