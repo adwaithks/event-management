@@ -40,16 +40,6 @@ const Service1 = ({ title }) => {
 				display: "flex",
 				position: "relative",
 				justifyContent: "flex-start",
-				// _hover: {
-				// 	filter: "brightness(0.9)",
-				// },
-				// // _hover: {
-				// // 	bgColor: "#260042",
-				// // 	color: "white",
-				// // 	cursor: "pointer",
-				// // 	boxShadow: "5px 5px 0px #260042",
-				// // 	border: "#260042 solid 2px",
-				// // },
 			}}
 			onClick={() => {
 				if (window.innerWidth < 600)
@@ -77,7 +67,7 @@ const Service1 = ({ title }) => {
 					p: 4,
 				}}
 			>
-				<Text fontFamily="DM Serif Display" fontSize="2xl" mr={2}>
+				<Text fontFamily="Poppins" fontSize="2xl" mr={2}>
 					{title}
 				</Text>
 				<ArrowForwardIcon fontSize="3xl" />
@@ -147,20 +137,29 @@ const WhatElse = () => {
 	return (
 		<Box
 			sx={{
+				bgColor: "#d1b500",
 				mb: isTabletOrBelow ? 100 : 120,
-				mt: 200,
-				p: 10,
+				position: "relative",
+				pb: 200,
 			}}
 			width="100%"
 			justifyContent="center"
 			margin="auto"
 			flexWrap="wrap"
 		>
-			<Box mb={5}>
+			<Image
+				height="100%"
+				position="absolute"
+				zIndex={1}
+				filter="brightness(100%)"
+				width="100%"
+				src="https://images.unsplash.com/photo-1545873681-d8affd67677b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80"
+			/>
+			<Box pt={100} sx={{ position: "relative", zIndex: 2 }} mb={5}>
 				<Heading
 					textAlign="center"
 					fontWeight="extrabold"
-					fontFamily="DM Serif Display"
+					fontFamily="Poppins"
 				>
 					What Else Do We Offer ?
 				</Heading>

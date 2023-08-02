@@ -1,6 +1,5 @@
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Image, Text } from "@chakra-ui/react";
 import ServiceCard from "./ServiceCard";
-import { useEffect, useRef, useState } from "react";
 
 const events = [
 	{
@@ -88,13 +87,31 @@ const Services = () => {
 			sx={{
 				display: "flex",
 				flexDirection: "column",
+				position: "relative",
 				width: "100%",
+				bgColor: "#d1b500",
 				alignItems: "center",
-				py: 40,
 			}}
 		>
-			<Box sx={{ textAlign: "center", mr: 2, mb: 5 }}>
-				<Heading fontWeight="extrabold" fontFamily="DM Serif Display">
+			<Image
+				height="100%"
+				position="absolute"
+				zIndex={1}
+				filter="brightness(100%)"
+				width="100%"
+				src="https://images.unsplash.com/photo-1545873681-d8affd67677b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80"
+			/>
+			<Box
+				sx={{
+					pt: 40,
+					textAlign: "center",
+					position: "relative",
+					zIndex: 2,
+					mr: 2,
+					mb: 5,
+				}}
+			>
+				<Heading fontWeight="extrabold" fontFamily="Poppins">
 					Our Services
 				</Heading>
 				<Container>
@@ -111,6 +128,7 @@ const Services = () => {
 					justifyContent: "center",
 					width: "100%",
 					gap: 1,
+					pb: 200,
 				}}
 			>
 				{events.map((event, index) => {
@@ -123,36 +141,6 @@ const Services = () => {
 						/>
 					);
 				})}
-				{/* <ServiceCard
-					imageUrl="https://img1.wsimg.com/isteam/stock/52957/:/rs=w:730,h:730,cg:true,m/cr=w:730,h:730"
-					title="Healthy Options"
-					description="Great taste is the name of the game and we're committed to stepping up to the plate. Our goal is provide delicious, natural options. That's why we prepare all of our meals with fresh, locally sourced ingredients. "
-				/>
-				<ServiceCard
-					imageUrl="https://img1.wsimg.com/isteam/stock/YO2jWwk/:/rs=w:730,h:730,cg:true,m/cr=w:730,h:730"
-					title="Catering"
-					description="Are you looking for someone to provide the food at your next event? Large or small, we do it all! Get in touch to start planning the perfect meal for a business lunch, wedding, cocktail reception, and more!"
-				/>
-				<ServiceCard
-					imageUrl="https://img1.wsimg.com/isteam/stock/lbAeg08/:/rs=w:730,h:730,cg:true,m/cr=w:730,h:730"
-					title="Destination Events"
-					description="In today's culture of unhealthy fast food, eating well can be difficult. Don't know where to start? Let us help with our tailored menu program. Get in touch so we can work together to plan something that's right for you."
-				/>
-				<ServiceCard
-					imageUrl="https://img1.wsimg.com/isteam/stock/52957/:/rs=w:730,h:730,cg:true,m/cr=w:730,h:730"
-					title="Transportation"
-					description="Great taste is the name of the game and we're committed to stepping up to the plate. Our goal is provide delicious, natural options. That's why we prepare all of our meals with fresh, locally sourced ingredients. "
-				/>
-				<ServiceCard
-					imageUrl="https://img1.wsimg.com/isteam/stock/YO2jWwk/:/rs=w:730,h:730,cg:true,m/cr=w:730,h:730"
-					title="Music"
-					description="Are you looking for someone to provide the food at your next event? Large or small, we do it all! Get in touch to start planning the perfect meal for a business lunch, wedding, cocktail reception, and more!"
-				/>
-				<ServiceCard
-					imageUrl="https://img1.wsimg.com/isteam/stock/lbAeg08/:/rs=w:730,h:730,cg:true,m/cr=w:730,h:730"
-					title="Decorations"
-					description="In today's culture of unhealthy fast food, eating well can be difficult. Don't know where to start? Let us help with our tailored menu program. Get in touch so we can work together to plan something that's right for you."
-				/> */}
 			</Box>
 		</Box>
 	);

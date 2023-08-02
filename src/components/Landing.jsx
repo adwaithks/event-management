@@ -52,7 +52,7 @@ const Landing = () => {
 						// textDecorationColor: "gold",
 					}}
 					fontSize={isTabletOrBelow ? "4xl" : "6xl"}
-					fontFamily="DM Serif Display"
+					fontFamily="Poppins"
 					fontWeight="800"
 					color="white"
 					mb={2}
@@ -90,7 +90,13 @@ const Landing = () => {
 				</Button>
 			</Container>
 			{!isTabletOrBelow && (
-				<Box sx={{ width: "50%", bgColor: "white", height: "100%" }}>
+				<Box
+					sx={{
+						width: "50%",
+						bgColor: "white",
+						height: "100%",
+					}}
+				>
 					<Image
 						objectFit="cover"
 						height={"100%"}

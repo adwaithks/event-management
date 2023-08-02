@@ -6,7 +6,7 @@ const HowWeDoIt = () => {
 		<Box
 			sx={{
 				height: "100%",
-				py: 30,
+				pb: 100,
 				position: "relative",
 			}}
 		>
@@ -30,7 +30,7 @@ const HowWeDoIt = () => {
 				}}
 			>
 				<Heading
-					fontFamily="DM Serif Display"
+					fontFamily="Poppins"
 					color="white"
 					fontWeight="extrabold"
 				>
@@ -38,7 +38,7 @@ const HowWeDoIt = () => {
 				</Heading>
 				<Container>
 					<Text color="lightgray">
-						More than 10 year&apos;s experience in corporate events
+						More than 20 year&apos;s experience in corporate events
 						planning guarantees a professional and experienced
 						approach from a team of event organisers who will
 						formulate a concept and event plan based on
@@ -63,7 +63,7 @@ const HowWeDoIt = () => {
 					description="Harnessing cutting-edge technology, we create immersive event experiences that leverage state-of-the-art audiovisual equipment and innovative event management software."
 				/>
 				<WorkCard
-					title="Affordable Price"
+					title="Transparency"
 					description="We make exceptional event experiences accessible by offering transparent pricing and working closely with your budgetary requirements, ensuring you receive the best value without compromising quality."
 				/>
 				<WorkCard

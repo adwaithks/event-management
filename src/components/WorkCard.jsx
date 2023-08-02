@@ -21,7 +21,7 @@ const WorkCard = ({ title, description }) => {
 						mb: 3,
 						color: "white",
 					}}
-					fontFamily="DM Serif Display"
+					fontFamily="Poppins"
 					fontSize="3xl"
 					fontWeight="bold"
 				>

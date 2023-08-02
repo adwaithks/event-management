@@ -215,11 +215,7 @@ const ServiceCard = (props) => {
 					zIndex: 2,
 				}}
 			>
-				<Text
-					fontWeight="black"
-					fontSize="2xl"
-					fontFamily="DM Serif Display"
-				>
+				<Text fontWeight="black" fontSize="2xl" fontFamily="Poppins">
 					{title} <ArrowForwardIcon />
 				</Text>
 				{/* <Text fontWeight="bold">{description}</Text> */}

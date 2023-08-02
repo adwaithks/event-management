@@ -5,7 +5,7 @@ const ContactNow = () => {
 	return (
 		<Box sx={{ mb: 100 }}>
 			<Box textAlign="center">
-				<Heading fontWeight="extrabold" fontFamily="DM Serif Display">
+				<Heading fontWeight="extrabold" fontFamily="Poppins">
 					Get in Touch, Let&apos;s Make Magic Happen!
 				</Heading>
 				<Container>
