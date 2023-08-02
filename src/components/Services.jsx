@@ -115,7 +115,7 @@ const Services = () => {
 					Our Services
 				</Heading>
 				<Container>
-					<Text color="gray">
+					<Text color="black">
 						We offer a plethora of services. Leading Event
 						Management Company In Kochi, Kerala
 					</Text>

@@ -163,7 +163,7 @@ const WhatElse = () => {
 				>
 					What Else Do We Offer ?
 				</Heading>
-				<Text color="gray" textAlign="center">
+				<Text color="black" textAlign="center">
 					We are not done yet! We offer even more, other than our core
 					services
 				</Text>
